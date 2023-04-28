@@ -2,4 +2,13 @@ module github.com/dereban25/kbot
 
 go 1.16
 
-require github.com/spf13/cobra v1.7.0 // indirect
+require (
+	github.com/spf13/cobra v1.6.1
+	github.com/stianeikeland/go-rpio v4.2.0+incompatible
+	gopkg.in/telebot.v3 v3.1.2
+)
+
+require (
+	github.com/inconshreveable/mousetrap v1.0.1 // indirect
+	github.com/spf13/pflag v1.0.5 // indirect
+)
