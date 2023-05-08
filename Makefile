@@ -1,7 +1,3 @@
-.PHONY: all
-
-all:  image push
-
 APP=$(shell basename $(shell git remote get-url origin))
 REGESTRY=gcr.io/kuber-351315/
 CURRENTARCH=$(shell dpkg --print-architecture)
