@@ -50,8 +50,8 @@
 3. You should now have command-line access to your ArgoCD server. You can use the `argocd` command to perform various tasks, such as syncing applications or viewing their status.
 
 ## Accessing the ArgoCD Interface
-![alt text](argocd_1.png)
 ![alt text](argocd_2.png)
+![alt text](argocd_1.png)
 
 
 1. Open a web browser and navigate to the ArgoCD URL.
