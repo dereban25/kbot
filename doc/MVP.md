@@ -33,24 +33,23 @@ Once ArgoCD is set up, you can start deploying your applications to your Kuberne
 
    ```yaml
    ---
-   apiVersion: argoproj.io/v1alpha1
-   kind: Application
-   metadata:
-     name: my-app
-     namespace: argocd
-   spec:
-     destination:
-       server: https://kubernetes.default.svc
-       namespace: default
-     source:
-       repoURL: https://github.com/my-org/my-repo.git
-       targetRevision: HEAD
-       path: kubernetes
-     project: default
-     syncPolicy:
-       automated:
-         prune: true
-         selfHeal: true
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+    name: my-app
+    namespace: argocd
+spec:
+  project: default
+  destination:
+      server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/den-vasyliev/go-demo-app.git
+    targetRevision: HEAD
+    path: helm
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
    ```
 
 3. Apply the ArgoCD application YAML file to your Kubernetes cluster using the `kubectl apply` command.
