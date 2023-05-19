@@ -19,7 +19,6 @@ This script retrieves resource usage statistics from Kubernetes for a specified 
    ```
 
    Replace `<namespace>` with the target namespace in Kubernetes.
-   Replace `<command>` with the appropriate `kubectl` command (e.g., `get`, `describe`, etc.).
    Replace `<resource_type>` with the desired resource type (e.g., `pods`, `deployments`, etc.).
 
 4. The script will retrieve the resource usage statistics for the specified resource type in the given namespace and display them on the console.
