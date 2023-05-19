@@ -1,4 +1,3 @@
-Run script with Memory CPU and Name in kubernetes 
 #!/bin/bash
 
 # Define command-line arguments
