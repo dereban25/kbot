@@ -1,5 +1,9 @@
 pipeline {
 agent any
+    parameters {
+        string(name: 'ENVIRONMENT', defaultValue: 'dev', description: 'Environment to deploy to')
+        booleanParam(name: 'ENABLE_TESTS', defaultValue: true, description: 'Enable running tests')
+    }
     environment {
         REPO = "https://github.com/mirik12/kbot"
         BRANCH = 'main'
